@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>2048 Game</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>2048</h1>
+            <div class="score">
+                <div class="current_score">
+                    <p>SCORE</p>
+                    <p class="cal_score">0</p>
+                </div>
+                <div class="best_score">
+                    <p>BEST</p>
+                    <p class="b_score">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="above_game">
+            <div class="play">
+                <p>Join the tiles, get to <span>2048!</span></p>
+                <p class="link">How to play →</p>
+            </div>
+            <div class="newgame">New Game</div>
+        </div>
+        <!-- Game play -->
+        <div class="game_container" id="game_container">
+            <div class="row_1 tile">
+                <div class="tile_11" data-box="11"></div>
+                <div class="tile_12" data-box="12"></div>
+                <div class="tile_13" data-box="13"></div>
+                <div class="tile_14" data-box="14"></div>
+            </div>
+            <div class="row_2 tile">
+                <div class="tile_21" data-box="21"></div>
+                <div class="tile_22" data-box="22"></div>
+                <div class="tile_23" data-box="23"></div>
+                <div class="tile_24" data-box="24"></div>
+            </div>
+            <div class="row_3 tile">
+                <div class="tile_31" data-box="31"></div>
+                <div class="tile_32" data-box="32"></div>
+                <div class="tile_33" data-box="33"></div>
+                <div class="tile_34" data-box="34"></div>
+            </div>
+            <div class="row_4 tile">
+                <div class="tile_41" data-box="41"></div>
+                <div class="tile_42" data-box="42"></div>
+                <div class="tile_43" data-box="43"></div>
+                <div class="tile_44" data-box="44"></div>
+            </div>
+            <div class="hide">
+                <div class="try">
+                    <p>Game over!</p>
+                    <button class="tryagain">Try again</button>
+                </div>
+            </div>
+        </div>
+        <div class="instruction">
+            <div class="play">
+                <p><span>HOW TO PLAY: </span>Swipe to move the tiles. Tiles with the same number merge into one when
+                    they touch. Add them up to reach 2048!</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script-1.js"></script>
+</body>
+
+</html>
